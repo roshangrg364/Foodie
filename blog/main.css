@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+  --primary-color: #ab2c4b;
+  --secondary-color: #43121d;
+  --third-color: #f98169;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-grey: #999;
+  --black-color: #000;
+  --primary-font: "Roboto,sans-serif";
+  --secondary-font: "Quicksand,sans-serif";
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color) !important;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+
+/*
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  custom scrollbar
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/*
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+    Css
+*/
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 0.625rem, 1.875rem;
+  line-height: 1.5rem;
+  background-color: var(--primary-color);
+  border: 0.18rem solid red var(--primary-color);
+  font-size: 0.932rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: white;
+  box-shadow: 0px 2px 10px -1px rgba(0 0 0 / 19%);
+  transition: all 0.4s ease-out 0s;
+}
+
+.white-btn {
+  display: inline-block;
+  padding: 0.625rem, 1.875rem;
+  line-height: 1.5rem;
+  background-color: var(--white-color);
+  border: 0.18rem solid red var(--white-color);
+  font-size: 0.932rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgba(0 0 0 / 19%);
+  transition: all 0.4s ease-out 0s;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.white-btn:hover {
+  background-color: transparent;
+  color: var(--white-color);
+  border-color: var(--primary-color);
+}
+
+.wrapper {
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+}
+
+.text-content {
+  width: 70%;
+  margin: auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2 {
+  color: var(--white-color);
+}
+
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-out;
+}
+
+.navigation-wrap nav-item {
+  padding: 0 0.625rem;
+  transition: all 200ms linear;
+}
+
+.navbar-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+}
+
+.navigation-wrap .main-btn {
+  padding: 0.3125;
+  box-shadow: none;
+  margin-left: 0.625rem;
+  color: var(--white-color);
+}
+
+.navigation-wrap.scroll-on {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: var(--white-color);
+  width: 100%;
+  box-shadow: 0 0.125rem 0.175rem 0 rgb(0, 0, 0 0.9);
+}
+
+/* Top banner design */
+.top-banner {
+  width: 100%;
+  background: url("./images/bg/bg-1.jpg") no-repeat center;
+  background-size: cover;
+  padding: 16.5rem 0 9.75rem;
+}
+
+/*  Counter*/
+
+.counter-section {
+  background-color: var(--primary-color);
+  padding: 2.5rem 0;
+}
+
+.counter-section p {
+  color: var(--white-color);
+}
