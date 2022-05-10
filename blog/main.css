@@ -100,6 +100,8 @@ p {
   display: inline-block;
   padding: 0.625rem, 1.875rem;
   line-height: 1.5rem;
+  width: 10rem;
+  height: 2rem;
   background-color: var(--primary-color);
   border: 0.18rem solid red var(--primary-color);
   font-size: 0.932rem;
@@ -114,11 +116,14 @@ p {
   display: inline-block;
   padding: 0.625rem, 1.875rem;
   line-height: 1.5rem;
+  width: 10rem;
+  height: 2rem;
   background-color: var(--white-color);
   border: 0.18rem solid red var(--white-color);
   font-size: 0.932rem;
   font-weight: 600;
   text-transform: capitalize;
+
   box-shadow: 0px 2px 10px -1px rgba(0 0 0 / 19%);
   transition: all 0.4s ease-out 0s;
 }
@@ -190,7 +195,7 @@ p {
   top: 0;
   background: var(--white-color);
   width: 100%;
-  box-shadow: 0 0.125rem 0.175rem 0 rgb(0, 0, 0 0.9);
+  box-shadow: 0 0.125rem 0.175rem 0 rgb(0, 0, 0 1);
 }
 
 /* Top banner design */
@@ -210,4 +215,58 @@ p {
 
 .counter-section p {
   color: var(--white-color);
+}
+
+.food-type {
+  padding-top: 3.35rem;
+}
+.food-type ul li {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 32px;
+  margin-left: 32px;
+}
+
+.food-type ul li::before {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.story-section {
+  height: 24rem;
+  width: 100%;
+  background: url("./images/bg/bg-2.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.card {
+  border-radius: 5rem !important;
+  margin: 1rem;
+}
+.testinomial-section {
+  background-color: var(--primary-color);
+}
+
+.carousel-item {
+  background-color: var(--white-color);
+  margin-top: 1rem;
+  padding: 8rem 3rem;
+  text-align: center;
+  border: none;
+  border-radius: 1rem;
+}
+.carousel-item img {
+  max-width: 5rem;
+  border-radius: 10rem;
+}
+.carousel-indicators {
+  color: var(--text-color);
 }

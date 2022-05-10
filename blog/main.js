@@ -17,8 +17,18 @@ const counters = function () {
   let duration = 10;
   counterElms.forEach(function (counterElm, index) {
     counter(index + 1, 0, end, duration);
-    end++;
+    const randomNum = Math.trunc(Math.random() * 10 + 1);
+    end += randomNum;
     duration += 10;
   });
 };
 counters();
+
+const navElm = document.querySelector(".navigation-wrap");
+window.onscroll = function () {
+  if (document.documentElement.scrollTop > 20) {
+    navElm.classList.add("scroll-on");
+  } else {
+    navElm.classList.remove("scroll-on");
+  }
+};
